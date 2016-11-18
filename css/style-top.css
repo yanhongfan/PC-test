@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:"微软雅黑";
+}
+ul li{
+    list-style: none;
+}
+ .banner{
+    width: 1365px;
+    height: 580px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background: url("../images/imageOne/default.gif") no-repeat center ;
+}
+ .banner .bannerInner{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.banner .bannerInner div{
+    width: 1365px;
+    height:580px;
+    margin: 0 auto;
+    position: absolute;
+    opacity: 0;
+    z-index: 0;
+}
+ .banner .bannerInner div img{
+    width: 100%;
+    height: 100%;
+    display: none;
+    border: none;
+    vertical-align: top;
+}
+ .cursor{
+     cursor: pointer;
+ }
+/*焦点*/
+ .banner .focusLi {
+     width: 200px;
+     height: 200px;
+     position: absolute;
+     left: 1040px;
+     top: 200px;
+     background-color: white;
+     z-index: 2;
+     opacity:0.8;
+ }
+ .banner .focusLi  li{
+     cursor: pointer;
+     height: 40px;
+     width: 200px;
+ }
+.banner .focusLi  li span{
+    margin-left: 10px;
+    font-size: 14px;
+    height: 40px;
+    line-height: 40px;
+
+}
+.banner  .focusLi li.selected{
+     background-color: lightpink;
+ }
+/*腾讯logo*/
+.top_logo{
+    width: 160px;
+    height: 35px;
+    position: absolute;
+    z-index: 2;
+    left: 55px;
+    top: 30px;
+}
+.top_logo img{
+    width: 100%;
+    height:100%;
+    border: none;
+}
+/*导航条*/
+.nav_area{
+    width: 1245px;
+    height: 25px;
+    border-radius: 50px 50px 50px  50px;
+    position: absolute;
+    z-index: 2;
+    background: rgba(255,255,255,.4);
+    margin-top: 80px;
+    margin-left: 50px;
+    /*opacity: 0.1;
+    filter: alpha(opacity=0.1);*/
+}
+.nav_ul{
+    width: 100%;
+    height: 100%;
+
+}
+.nav_ul li{
+    position: relative;
+    top:0;
+    left: 0;
+    float: left;
+    width: 100%;
+    height: 100%;
+    line-height: 25px;
+
+}
+.nav_ul li span{
+    cursor: pointer;
+    margin-left: 23px;
+    -webkit-user-select: none;
+}
+.nav_ul li span:hover{
+    color: lightseagreen;
+}
+.nav_ul li span:hover+div{
+    display: inline-block;
+}
+.nav_ul li a:hover span{
+    position: absolute;
+    top: 30px;
+    display: inline;
+}
+/*跟随div*/
+.follwer_span{
+    position: absolute;
+    top: 30px;
+    left: 0;
+    display: none;
+    height: 28px;
+    /*background: rgba(65,65,65,0.4);*/
+    background: white;
+    opacity: 0.8;
+    color: black;
+    border-radius: 50px 50px 50px  50px;
+}
+
